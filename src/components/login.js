@@ -21,7 +21,7 @@ console.log(user);
         <>
         <div className='container-box'>
         <div className='popup'>
-      <form>
+      <form onSubmit={e =>{Logininfo(e)}}>
       <button id="btn" className='close-btn' onClick={()=>props.setTrigger(false)}>close</button>
       <br/>
         <h3>Login</h3>
@@ -31,7 +31,7 @@ console.log(user);
       <label>Password: </label>
       <input type="password" name="pass" placeholder='Password' id="loginPassword" value={password} onChange={(e)=>setPassword(e.target.value)} required />
       <br/><br/>
-      <button className='close-submit'onClick={e =>{Logininfo(e)}}>Submit</button>
+      <button className='close-submit'>Submit</button>
       
     </form>
     <br/>

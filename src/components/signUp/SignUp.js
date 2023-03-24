@@ -46,7 +46,7 @@ function PopUp(props) {
                 <button id="btn" className='close-btn' onClick={()=>props.setTrigger(false)}>close</button>
                 {props.children}
 
-                <form className='ip'>
+                <form className='ip' onSubmit={(e)=>{onSignUp(e)}}>
                     <p>
                     <label>First Name: </label>
                     <input 
@@ -94,7 +94,7 @@ function PopUp(props) {
 
                     <p style={{color:"red", fontSize:"12px"}}>{error}</p>
                     
-                    <button id="btn" onClick={(e)=>{onSignUp(e)}} >Signup</button>
+                    <button id="btn" >Signup</button>
           
                 </form> 
            
