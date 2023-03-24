@@ -4,7 +4,7 @@ function mainpage(props){
 return(
     <>
     <div className="grid-container">
-    <img src= {props.src}/>
+    <img src= {props.src}  alt=""/>
     </div>
     </>
 )
