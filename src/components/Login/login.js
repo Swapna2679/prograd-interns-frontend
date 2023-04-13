@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css'
-
+import {FaTimes} from 'react-icons/fa';
 function Demo(props)
 {
  // const [close, setClose]=useState(false)
@@ -13,7 +13,8 @@ const Logininfo=(e)=>{
     password: password,
 };
 console.log(user);
-   props.setTrigger(false)
+  props.setTrigger(false);
+   props.setLogged(true);
 } 
 
     if(props.trigger){
@@ -22,7 +23,7 @@ console.log(user);
         <div className='container-box'>
         <div className='popup'>
       <form onSubmit={e =>{Logininfo(e)}}>
-      <button id="btn" className='close-btn' onClick={()=>props.setTrigger(false)}>close</button>
+      <button id="btn" className='close-btn' onClick={()=>props.setTrigger(false)}><FaTimes/></button>
       <br/>
         <h3>Login</h3>
       <label>E-mail: </label>

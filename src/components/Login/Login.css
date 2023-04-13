@@ -1,32 +1,4 @@
-/*search bar
-.background{
-  background-image:url("https://cdn.shopify.com/s/files/1/0969/9128/collections/black-and-white.jpg?v=1441963817");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 600px;
-  background-color: rgba(0, 0, 0, 0.2);
-}
 
-.containerSearchBar{
-  display:flex;
-  justify-content: center;
-  align-items: stretch;
-  width:500px;
-  height: 30px;
-  position:absolute;
-  border: 1px solid black;
-  margin-left: 30%;
-  margin-right:45em;
-  top: 20em;
-  z-index: 1;
- /* padding:100px;*/
-/*}
-input[type=text]{
-
-  width: 100%;
-  height: 30px
-}*/
-/*login*/
    .container-box{ 
     
     position: fixed;
@@ -51,6 +23,9 @@ input[type=text]{
     background-color: #fff;
     max-width: 300px;
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .close-submit{
     width:100px;
@@ -72,13 +47,7 @@ input[type=text]{
     border-radius: 4px;
     border:1px solid ;
 }
-  /* input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  } */
+ 
   .login-open-btn{
     border-radius: 10px;
     height: 40px;
